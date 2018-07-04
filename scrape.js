@@ -4,17 +4,17 @@
 // for the version we showed in class.
 
 document.addEventListener("keypress", function () {
-    let rows = document.querySelectorAll('table')[2].querySelectorAll("tr.odd, tr.even");
-    
+    const rows = document.querySelectorAll('table')[2].querySelectorAll("tr.odd, tr.even");
+
     console.clear();
 
     for (let i = 0; i < rows.length; i++) {
         const row = rows[i];
 
-        let actor = row.querySelector("[itemprop=name]").innerHTML.trim();
+        const actor = row.querySelector("[itemprop=name]").innerHTML.trim();
 
-        let characterTag = row.querySelector("td.character");
-        let characterAnchor = characterTag.querySelector("a");
+        const characterTag = row.querySelector("td.character");
+        const characterAnchor = characterTag.querySelector("a");
         let character;
 
         if (characterAnchor != null) {
@@ -25,3 +25,4 @@ document.addEventListener("keypress", function () {
         console.log("Actor: " + actor + ", Character: " + character.replace(/\s+|\s+$/g, ' ').trim());
     }
 });
+// End of File
