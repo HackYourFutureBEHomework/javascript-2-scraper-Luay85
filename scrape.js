@@ -5,7 +5,7 @@
 
 document.addEventListener("keypress", function () {
     let rows = document.querySelectorAll('table')[2].querySelectorAll("tr.odd, tr.even");
-    // document.querySelectorAll('table')[2].querySelectorAll("tr.odd")[0].querySelector("td.character a").innerHTML;
+    
     console.clear();
 
     for (let i = 0; i < rows.length; i++) {
